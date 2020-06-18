@@ -1,0 +1,338 @@
+body{
+    background-color:white;
+    background: url(../ressources/background_camagru2.png) no-repeat center top;
+  }
+
+#player {
+  width: 40%;
+  border-top:2px solid #000000;
+  border-bottom:2px solid #000000;
+  border-left:2px solid #000000;
+}
+
+#canvas{
+  width: 35%;
+  border-top:2px solid #000000;
+  border-right:2px solid #000000;
+  border-bottom:2px solid #000000;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+#filters_div{
+  width: 30%;
+  padding-top: 10px;
+  border-top:2px solid #000000;
+  border-bottom:2px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.filters{
+  padding-right: 10%;
+  padding-left: 10%;
+
+}
+
+.pictures_bigdiv{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .picture_div{
+  max-width: 22%;
+  margin: 15px;
+  align-content: flex-start;
+  background-color: white, 0.6;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+  
+}
+
+.title{
+  margin-left: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.hed{
+    margin-top : 1%;
+    margin-right: auto;
+    font-family: tahoma,arial;
+    text-align: center;
+	  font-size: 6vw;
+	  font-weight: bolder;
+	  text-shadow: 7px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+    color: white;
+  }
+
+.main{
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.container{
+    width: 100%;
+}
+
+.container ul{
+    display: flex;
+    align-content: center;
+	  margin: auto;
+    width: 90%;
+}
+  
+.container ul li{
+    font-family: tahoma,arial;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    font-size: 2vw;
+    background-color: #1e272e;
+	  color: white;
+	  position: relative;
+    text-decoration: none;
+    cursor: pointer;
+  
+}
+  
+.container ul li .left_span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 0%;
+    background-color: #ffffff;
+}
+  
+.container ul li .right_span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1%;
+    height: 0%;
+    background-color: #ffffff;
+}
+  
+.container ul li:hover span{
+  height: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.container ul li:hover{
+  color: #fc0404;
+  transition: all .5s ease-in-out;
+}
+
+#loggued_user {
+  font-family: sans-serif;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5%;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding: 5px 5px 5px 5px;
+  width: auto;
+  font-size: 1em;
+}
+
+.button {
+  display: inline-block;
+  font-family: sans-serif;
+  margin-top: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+  outline: 0;
+}
+
+.button:hover {background-color: #9c1e1e}
+
+.button:active {
+  background-color: #000000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.galerie {
+  margin-top: 20px;
+  font-size: 3vw;
+  text-align: center;
+  font-family: tahoma,arial;
+  font-weight: bolder;
+	text-shadow: 7px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+  color: white;
+}
+
+.button_pic{
+  display: flex;
+  flex-direction: column;
+  width: 7%;
+}
+
+#snap{
+	padding:6px 0 6px 0;
+	font:bold 1vw Arial;
+  background:rgb(255, 255, 255);
+  border-top:2px solid #000000;
+  border-right:2px solid #000000;
+  border-bottom:2px solid #000000;
+  border-left:2px solid #000000;
+  outline: 0;
+  height: 50%;
+}
+
+label{
+  display: table;
+  padding:45% 3% 10% 10%;
+  font:bold 1vw Arial;
+  background:rgb(255, 255, 255);
+  border-top:2px solid #000000;
+  border-right:2px solid #000000;
+  border-bottom:2px solid #000000;
+  border-left:2px solid #000000;;
+  outline: 0;
+  height: 50%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#upload{
+  width: 7%;
+  border-top:2px solid #000000;
+  border-right:2px solid #000000;
+  border-bottom:2px solid #000000;
+  border-left:2px solid #000000;
+	font:bold 1vw Arial;
+	background:#fff;
+  outline: 0;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.custom-input {
+  width: 93%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-left: 5px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  max-height: 6%;
+}
+
+.update-label {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-left: 5px;
+}
+
+.custom-button {
+  text-align: center;
+  margin-bottom: 2px;
+  margin-right: 3%;
+  max-height: 7%;
+  border-radius: 4px;
+  background-color: #C2AC0E;
+  width: 95%;
+  font-size: 16px;
+  border: 0;
+  color: white;
+}
+
+.like_div{
+  max-width: 100%;
+}
+
+.like_class{
+  font-size: 1vw;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+
+.like_button{
+  display: inline-block;
+  font-family: sans-serif;
+  margin-top: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 0 1px #999;
+  outline: 0;
+}
+
+.dislike_button{
+  display: inline-block;
+  font-family: sans-serif;
+  margin-top: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(78, 42, 238);
+  border-radius: 30px;
+  box-shadow: 0 1px #999;
+  outline: 0;
+}
+
+.comment_div{
+  margin: 3px 2px 2px 2px;
+  max-width: 100%;
+}
+
+.com_class{
+  font-size: 1vw;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+
+.del_com_div{
+  margin: 3px 2px 3px 2px;
+  max-width: 100%;
+}
+
+.del_com{
+  font-size: 1vw;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+
+.del-button{
+  display: inline-block;
+  font-family: sans-serif;
+  margin-top: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #C2AC0E;
+  border-radius: 15px;
+  box-shadow: 0 1px #999;
+  outline: 0;
+}
+
+.del-button:active {
+  background-color: #000000;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}

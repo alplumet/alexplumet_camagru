@@ -1,0 +1,118 @@
+body{
+    background-color:white;
+    background: url(../ressources/background_camagru.png) no-repeat center;
+  }
+
+.big {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.mt-4 {
+  margin-top: 14px;
+}
+
+.custom-input {
+  width: 100%;
+  padding-left: 5px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  height: 32px;
+}
+
+.update-label {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.custom-button {
+  margin-left: auto;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #C2AC0E;
+  width: 70px;
+  font-size: 16px;
+  border: 0;
+  color: white;
+}
+
+.reset-button {
+  margin-left: auto;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #C2AC0E;
+  width: 125px;
+  font-size: 16px;
+  border: 0;
+  color: white;
+}
+
+
+.sign {
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    font-family: sans-serif;
+}
+
+.home_butt{
+  left: 2vw;
+  top: 15px;
+}
+
+#loggued_user {
+  font-family: sans-serif;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5%;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding: 5px 5px 5px 5px;
+  width: auto;
+  font-size: 1em;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+  outline: 0;
+}
+
+.button:hover {background-color: #9c1e1e}
+
+.button:active {
+  background-color: #000000;
+  box-shadow: 0 5px rgb(255, 255, 255);
+  transform: translateY(4px);
+}
